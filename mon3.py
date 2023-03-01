@@ -23,9 +23,9 @@ process_name = 'java.exe'
 total_offset_old = 0
 
 # 配置Kafka消费者
-KAFKA_SERVER = ['192.168.0.127:9092']
-KAFKA_TOPIC = 'iqfeed'
-KAFKA_GROUP_ID = 'moniqf13'
+KAFKA_SERVER = ['*.*.*.*:9092']
+KAFKA_TOPIC = '***'
+KAFKA_GROUP_ID = '**'
 KAFKA_AUTO_OFFSET_RESET = 'latest'
 
 # 初始化时间戳和阈值
@@ -34,8 +34,8 @@ threshold = timedelta(minutes=5)
 
 
 # 钉钉机器人的访问令牌和加签密钥
-url = "https://oapi.dingtalk.com/robot/send?access_token=2bb6bc4aed306d05a38b37ef8f6a7f230292117c0bb3546619b2e14908e5aa10"
-secret = "SEC842743b3be8ea14bbbee9e3586cbd790ae2b4ef724e093ec1387d0f6108fd9c1"
+url = "https://oapi.dingtalk.com/robot/send?access_token=2bb6bc4aed306d05a38b37ef8f6a7f2302*********************"
+secret = "SEC842743b3be8ea14bbbee9e3586cbd790ae2b4ef724e093e*****************"
 
 # 发送钉钉消息的函数
 def send_alert(message):
